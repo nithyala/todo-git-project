@@ -27,7 +27,7 @@ def test_delete_task():
 
     delete_task(0)
 
-    assert len(tasks) == 1
+    assert len(tasks) == 10
     assert tasks[0]["task"] == "Learn GitHub"
 
 def test_task_count():
