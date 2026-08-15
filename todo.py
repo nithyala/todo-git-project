@@ -18,6 +18,9 @@ def delete_task(index):
     if 0 <= index < len(tasks):
         tasks.pop(index)
 
+def task_count():
+    return len(tasks)
+
 
 if __name__ == "__main__":
     add_task("Learn Git")

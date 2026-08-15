@@ -1,4 +1,4 @@
-from todo import tasks, add_task, complete_task, delete_task
+from todo import tasks, add_task, complete_task, delete_task, task_count
 
 
 def setup_function():
@@ -29,3 +29,11 @@ def test_delete_task():
 
     assert len(tasks) == 1
     assert tasks[0]["task"] == "Learn GitHub"
+
+def test_task_count():
+    tasks.clear()
+
+    add_task("Learn Git")
+    add_task("Learn GitHub")
+
+    assert task_count() == 2
