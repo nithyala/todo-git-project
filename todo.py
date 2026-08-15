@@ -1,4 +1,4 @@
-tasks = []
+tasks = ["Learn Git"]
 
 
 def add_task(task):
