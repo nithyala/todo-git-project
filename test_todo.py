@@ -22,13 +22,12 @@ def test_complete_task():
 
 
 def test_delete_task():
-    add_task("Learn Git")
-    add_task("Learn GitHub")
+    tasks = ["Buy groceries", "Learn Git"]
 
-    delete_task(0)
+    deleted = delete_task(tasks, 0)
 
-    assert len(tasks) == 1
-    assert tasks[0]["task"] == "Learn GitHub"
+    assert deleted == "Buy groceries"
+    assert tasks == ["Learn Git"]
 
 def test_task_count():
     tasks.clear()
