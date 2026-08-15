@@ -14,9 +14,11 @@ def complete_task(index):
         tasks[index]["completed"] = True
 
 
-def delete_task(index):
-    if 0 <= index < len(tasks):
-        tasks.pop(index)
+
+def delete_task(tasks, task_number):
+    if 0 <= task_number < len(tasks):
+        return tasks.pop(task_number)
+    return None
 
 def task_count():
     return len(tasks)
