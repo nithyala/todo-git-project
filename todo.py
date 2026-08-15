@@ -1,4 +1,4 @@
-tasks = ["Buy groceries"]
+tasks = ["Buy groceries", "Learn Git"]
 
 
 def add_task(task):
